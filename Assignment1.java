@@ -1,19 +1,30 @@
-package task;
-
+package javaday4assignments;
+import java.util.Scanner;
 
 public class Assignment1 {
 
 	public static void main(String[] args) {
-		
-		int a=10,b=5;
-		System.out.println("Before Swapping ");
-		System.out.println(a);
-		System.out.println(b);
-		System.out.println("After Swapping");
-		a=a+b;
-		b=b+a;
-		System.out.println(a);
-		System.out.println(b);
-		}
+		// TODO Auto-generated method stub
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the n value");
+        int n=sc.nextInt();
+        boolean isprime=true;
+   	 for(int i=2;i<n;i++)
+   		{
+   		 if(n%i==0)
+   			{
+                isprime=false;
+   			 break;
+   		 }
+   		 
+   	 }
+   	 if(isprime==true)
+   		{
+   		 System.out.println(n+""+"is a prime number");
+   	 }
+   	 else
+   		 System.out.println(n+"is Not A Prime Number");
+   	}
+	}
 
-}
+
